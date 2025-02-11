@@ -32,7 +32,25 @@ key.alias=
 key.password=
 ```
 
-3️⃣ Build & Run
+3️⃣ Set the Package Name
+
+To change the package name to match your project, execute the start.sh script. This will update the package name throughout the project.
+
+First, make sure the script is executable:
+
+```text
+chmod +x start.sh
+```
+
+Then, run the script with your desired package name (e.g., com.example.app):
+
+```text
+./start.sh com.example.app
+```
+
+The script will move the files to the appropriate directories, adjust the package declarations in Kotlin files, and update the build.gradle.kts file with the new namespace.
+
+4️⃣ Build & Run
 
 ## 📜 Contributions
 
