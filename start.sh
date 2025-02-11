@@ -67,4 +67,8 @@ key.password=<your_key_password>
 EOF
 fi
 
+if [ -d ".git" ]; then
+  rm -rf .git
+fi
+
 echo "Script execution completed successfully"
