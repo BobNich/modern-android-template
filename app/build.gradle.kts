@@ -10,7 +10,7 @@ android {
     namespace = "com.template"
 
     defaultConfig {
-        applicationId = "com.template"
+        applicationId = namespace
         versionCode = 1
         versionName = "1.0"
         vectorDrawables {
