@@ -21,18 +21,7 @@ This template includes essential tools and libraries to kickstart your Android d
 git clone https://github.com/BobNich/modern-android-template.git
 ```
 
-2️⃣ Configure App Signing
-
-To use the Gradle signing plugin, create a file named ```signing.properties``` in the root directory and add:
-
-```text
-keystore.path=
-keystore.password=
-key.alias=
-key.password=
-```
-
-3️⃣ Set the Package Name
+2️⃣ Set the Package Name
 
 To change the package name to match your project, execute the start.sh script. This will update the package name throughout the project.
 
@@ -49,6 +38,17 @@ Then, run the script with your desired package name (e.g., com.example.app):
 ```
 
 The script will move the files to the appropriate directories, adjust the package declarations in Kotlin files, and update the build.gradle.kts file with the new namespace.
+
+3️⃣ Configure App Signing
+
+To use the Gradle signing plugin, create a file named ```signing.properties``` in the root directory and add:
+
+```text
+keystore.path=<your_keystore_path>
+keystore.password=<your_keystore_password>
+key.alias=<your_key_alias>
+key.password=<your_key_password>
+```
 
 4️⃣ Build & Run
 
