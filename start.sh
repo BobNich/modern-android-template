@@ -72,3 +72,5 @@ if [ -d ".git" ]; then
 fi
 
 echo "Script execution completed successfully"
+
+rm -- "$0"
